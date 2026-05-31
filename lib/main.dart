@@ -24,10 +24,23 @@ class FirstScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    // Top bar
     return Scaffold(
       appBar: AppBar(
-        title: const Text('First Screen'),
+        backgroundColor: Colors.black87,
+        title: const Text(
+            'First Screen',
+            style: TextStyle(
+                color: Colors.white,
+                fontFamily: 'GasoekOne',
+                fontSize: 30.0,
+                fontWeight: FontWeight.bold,
+            ),
+        ),
       ),
+
+      // Center of screen
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -36,12 +49,14 @@ class FirstScreen extends StatelessWidget {
               'Welcome to Screen 1',
               style: TextStyle(fontSize: 24),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 100),
             Image.asset(
               'assets/number1.png', // image for screen 1
-              height: 150,
+              height: 300,
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 200),
+
+            // button to go to second screen
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -63,10 +78,29 @@ class SecondScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // top bar
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Second Screen'),
+        leading: IconButton(
+            icon: Icon(Icons.arrow_back_ios_new_outlined),
+            color: Colors.white,
+            onPressed: () {
+              Navigator.pop(context); // go back to screen 1
+            },
+        ),
+        backgroundColor: Colors.black87,
+        title: const Text(
+            'Second Screen',
+            style: TextStyle(
+              color: Colors.white,
+              fontFamily: 'GasoekOne',
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
+
+      // center of screen
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -75,12 +109,14 @@ class SecondScreen extends StatelessWidget {
               'This is Screen 2',
               style: TextStyle(fontSize: 24),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 100),
             Image.asset(
               'assets/number2.png', // image for Screen 2
-              height: 150,
+              height: 300,
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 200),
+
+            // button to return to the first screen
             ElevatedButton(
               onPressed: () {
                 Navigator.pop(context); // Go back to Screen 1

@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Assignment 1 Starter',
+      title: 'Assignment 1',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -37,8 +37,8 @@ class FirstScreen extends StatelessWidget {
               style: TextStyle(fontSize: 24),
             ),
             const SizedBox(height: 20),
-            Image.network(
-              'https://via.placeholder.com/150', // Placeholder image
+            Image.asset(
+              'assets/number1.png', // image for screen 1
               height: 150,
             ),
             const SizedBox(height: 20),
@@ -76,8 +76,8 @@ class SecondScreen extends StatelessWidget {
               style: TextStyle(fontSize: 24),
             ),
             const SizedBox(height: 20),
-            Image.network(
-              'https://via.placeholder.com/200', // Placeholder image
+            Image.asset(
+              'assets/number2.png', // image for Screen 2
               height: 150,
             ),
             const SizedBox(height: 20),

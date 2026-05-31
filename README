@@ -1,0 +1,24 @@
+# Assignment 1 Flutter Project
+
+## Overview
+My Assignment 1 Flutter application, simply has two navigable screens displaying text and an image
+
+## Requirements
+
+Before running the project, make sure you have:
+
+- Flutter SDK
+- Dart
+- Android Studio or VS code
+- Emulator or simulator set up
+
+Check Flutter installation with
+
+flutter doctor
+
+## Run instructions
+
+git clone https://github.com/joshcxw/assignment1.git
+
+Run the application through VS code or with flutter through a command line
+
